@@ -1,0 +1,7 @@
+.submitButtonClass{
+    background-color: aqua;
+    width: 150px;
+    border: none;
+    height: 30px;
+    border-radius: 3px;
+}

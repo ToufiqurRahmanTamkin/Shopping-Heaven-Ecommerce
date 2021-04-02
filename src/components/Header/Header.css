@@ -1,0 +1,27 @@
+.list-item{
+    color: #ffffff;
+    list-style: none;
+    padding-top: 3px;
+    font-size: 20px;
+}
+.login-btn{
+    background-color: rgb(41, 25, 189);
+    height: 40px;
+    padding: 3px;
+    font-size: 20px;
+    width: 200px;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    text-align: center;
+}
+.list-item:hover{
+    text-decoration: none;
+}
+
+
+.login-btn:hover{
+    text-decoration: none;
+    background-color: blueviolet;
+    color: white;
+}

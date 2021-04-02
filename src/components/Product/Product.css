@@ -1,0 +1,12 @@
+.homeCardClass{
+    text-align: center;
+    align-items: center;
+    height: 350px;
+    background-color: rgb(165, 140, 182);
+    color: rgb(0, 0, 0);
+}
+.cardImageClass{
+    margin-top: 10px;
+    height: 130px;
+    width: 130px;
+}
