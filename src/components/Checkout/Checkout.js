@@ -10,7 +10,6 @@ const Checkout = () => {
     const [productDetails, setProductDetails] = useState(0);
     const [checkOrder, setCheckOrder] = useState(false);
 
-
     const handleCheckout = () => {
         const { _id, name, price, weight } = productDetails;
         const cartData = {
@@ -23,9 +22,7 @@ const Checkout = () => {
             body: JSON.stringify(cartData)
         }).then(res => {
             setCheckOrder(_id);
-
             localStorage.setItem("product", JSON.stringify(res.data.value));
-
         });
 
     }

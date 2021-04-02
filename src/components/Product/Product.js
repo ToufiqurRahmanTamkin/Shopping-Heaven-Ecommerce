@@ -18,20 +18,20 @@ const Product = (props) => {
         const url = `checkout/${_id}`;
         history.push(url);
 
-        // const data = {
-        //     name: name,
-        //     price: price,
-        //     weight: weight
-        // }
+        const data = {
+            name: name,
+            price: price,
+            weight: weight
+        }
 
-        // axios.put(`http://localhost:5000/updateProduct/${_id}`, {
-        //     body: JSON.stringify(data)
-        // }).then(res => {
-        //     setClicked(_id);
+        axios.put(`http://localhost:5000/updateProduct/${_id}`, {
+            body: JSON.stringify(data)
+        }).then(res => {
+            setClicked(_id);
 
-        //     localStorage.setItem("product", JSON.stringify(res.data.value));
+            localStorage.setItem("product", JSON.stringify(res.data.value));
 
-        // });
+        });
     }
 
     return (
