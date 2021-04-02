@@ -11,7 +11,7 @@ const DisplayProductDetails = (props) => {
     const { _id, name, weight, price } = props.product;
 
     const handleDelete = () => {
-        axios.delete(`http://localhost:5000/deleteProduct/${_id}`)
+        axios.delete(`https://apple-cupcake-90314.herokuapp.com/deleteProduct/${_id}`)
             .then(response => console.log(response))
             .catch(err => console.log(err));
     }

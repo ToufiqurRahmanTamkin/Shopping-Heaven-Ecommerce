@@ -6,7 +6,7 @@ const ManageProduct = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/')
+        axios.get('https://apple-cupcake-90314.herokuapp.com/')
             .then((response) => setProducts(response.data))
             .catch((error) => console.log(error))
     }, [])

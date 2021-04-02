@@ -19,7 +19,7 @@ const AddProducts = () => {
             time: new Date().toLocaleString()
         };
 
-        const url = `http://localhost:5000/addProduct`;
+        const url = `https://apple-cupcake-90314.herokuapp.com/addProduct`;
         fetch(url, {
             method: 'POST',
             headers: {

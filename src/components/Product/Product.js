@@ -24,7 +24,7 @@ const Product = (props) => {
             weight: weight
         }
 
-        axios.put(`http://localhost:5000/updateProduct/${_id}`, {
+        axios.put(`https://apple-cupcake-90314.herokuapp.com/updateProduct/${_id}`, {
             body: JSON.stringify(data)
         }).then(res => {
             setClicked(_id);

@@ -18,7 +18,7 @@ const Checkout = () => {
             weight: weight
         }
 
-        axios.put(`http://localhost:5000/updateProduct/${_id}`, {
+        axios.put(`https://apple-cupcake-90314.herokuapp.com/updateProduct/${_id}`, {
             body: JSON.stringify(cartData)
         }).then(res => {
             setCheckOrder(_id);
@@ -28,15 +28,14 @@ const Checkout = () => {
     }
 
     useEffect(() => {
-
         if (!productDetails) {
             // console.log("useEffect");
-            axios.get(`http://localhost:5000/${id}`)
+            axios.get(`https://apple-cupcake-90314.herokuapp.com/${id}`)
                 .then((response) => setProductDetails(response.data))
                 .catch((error) => console.log(error))
         }
 
-    }, [id])
+    }, [productDetails, id])
 
     return (
         <div>
