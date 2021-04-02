@@ -22,7 +22,7 @@ const Checkout = () => {
             body: JSON.stringify(cartData)
         }).then(res => {
             setCheckOrder(_id);
-            localStorage.setItem("product", JSON.stringify(res.data.value));
+            // localStorage.setItem("product", JSON.stringify(res.data.value));
         });
 
     }
