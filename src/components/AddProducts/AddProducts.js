@@ -59,7 +59,6 @@ const AddProducts = () => {
                 <input name="exampleRequired" type="file" onChange={handleImageUpload} />
                 <input className="addproductButton" type="submit" />
             </form>
-            
         </div>
     );
 };
