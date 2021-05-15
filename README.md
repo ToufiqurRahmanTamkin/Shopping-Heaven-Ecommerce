@@ -6,4 +6,4 @@ There is no separate user and admin panel, but An admin can add new products and
 This application is developed using react-router, react private router, firebase auth, MongoDB, material-UI.
 Users can buy products using this application.
 
-[Shopping Heaven Server Side Repository](https://github.com/ToufiqurRahmanTamkin/Shopping-Heaven-Server)
+[Shopping Heaven Server Side Repository](https://github.com/ToufiqurRahmanTamkin/Shopping-Heaven-Ecommerce-Server)
